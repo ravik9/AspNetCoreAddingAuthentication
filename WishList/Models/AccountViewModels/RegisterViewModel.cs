@@ -13,13 +13,13 @@ namespace WishList.Models.AccountViewModels
         [Required]
         [MinLength(8)]
         [StringLength(100)]
-        [DataType.Password]
+        [DataType("Password")]
         public string Password { get; set; }
 
         [Required]
         [MinLength(8)]
         [StringLength(100)]
-        [DataType.Password]
+        [DataType("Password")]
         [Compare("Password")]
         public string ConfirmPassword { get; set; }
     }
